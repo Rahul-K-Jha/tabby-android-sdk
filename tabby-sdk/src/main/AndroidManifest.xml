@@ -5,7 +5,9 @@
 
     <uses-permission android:name="android.permission.INTERNET" />
 
-    <application>
+    <application
+        android:supportsRtl="true"
+        >
         <activity
             android:name=".internal.ui.TabbyCheckoutActivity"
             android:exported="true"

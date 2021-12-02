@@ -208,8 +208,8 @@
         android:layout_width="0dp"
         android:layout_height="1dp"
         android:background="@color/widget__connection_line"
-        app:layout_constraintLeft_toRightOf="@id/q1icon"
-        app:layout_constraintRight_toLeftOf="@id/q2icon"
+        app:layout_constraintStart_toEndOf="@id/q1icon"
+        app:layout_constraintEnd_toStartOf="@id/q2icon"
         app:layout_constraintTop_toTopOf="@id/q1icon"
         app:layout_constraintBottom_toBottomOf="@id/q1icon"
         />
@@ -218,8 +218,8 @@
         android:layout_width="0dp"
         android:layout_height="1dp"
         android:background="@color/widget__connection_line"
-        app:layout_constraintLeft_toRightOf="@id/q2icon"
-        app:layout_constraintRight_toLeftOf="@id/q3icon"
+        app:layout_constraintStart_toEndOf="@id/q2icon"
+        app:layout_constraintEnd_toStartOf="@id/q3icon"
         app:layout_constraintTop_toTopOf="@id/q2icon"
         app:layout_constraintBottom_toBottomOf="@id/q2icon"
         />
@@ -228,8 +228,8 @@
         android:layout_width="0dp"
         android:layout_height="1dp"
         android:background="@color/widget__connection_line"
-        app:layout_constraintLeft_toRightOf="@id/q3icon"
-        app:layout_constraintRight_toLeftOf="@id/q4icon"
+        app:layout_constraintStart_toEndOf="@id/q3icon"
+        app:layout_constraintEnd_toStartOf="@id/q4icon"
         app:layout_constraintTop_toTopOf="@id/q3icon"
         app:layout_constraintBottom_toBottomOf="@id/q3icon"
         />
