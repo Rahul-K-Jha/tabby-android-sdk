@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="widget__title_text_size">14sp</dimen>
+    <dimen name="widget__quarter_sum_text_size">11sp</dimen>
+    <dimen name="widget__quarter_period_text_size">11sp</dimen>
+    <fraction name="widget__guide1_percent">0.0</fraction>
+    <fraction name="widget__guide2_percent">0.25</fraction>
+    <fraction name="widget__guide3_percent">0.50</fraction>
+    <fraction name="widget__guide4_percent">0.75</fraction>
+</resources>

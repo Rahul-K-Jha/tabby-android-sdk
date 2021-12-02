@@ -4,24 +4,27 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
     >
 
+    <!--  Column 1  -->
+
     <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideStart"
+        android:id="@+id/guide1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintGuide_percent="0.15"
+        app:layout_constraintGuide_percent="@fraction/widget__guide1_percent"
         />
 
     <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/widgetTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
         android:text="@string/widget__title"
-        app:layout_constraintStart_toStartOf="@+id/guideStart"
+        android:textSize="@dimen/widget__title_text_size"
+        app:layout_constraintStart_toStartOf="@+id/guide1"
         app:layout_constraintTop_toTopOf="parent"
         />
 
@@ -29,10 +32,10 @@
         android:id="@+id/q1icon"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="24dp"
         android:src="@drawable/ic_ellipse_q1"
-        android:tint="#444"
-        app:layout_constraintStart_toStartOf="@+id/guideStart"
+        android:tint="@color/widget__quarter_tint"
+        app:layout_constraintStart_toStartOf="@+id/guide1"
         app:layout_constraintTop_toBottomOf="@+id/widgetTitle"
         />
 
@@ -41,7 +44,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        app:layout_constraintStart_toStartOf="@+id/guideStart"
+        android:textSize="@dimen/widget__quarter_sum_text_size"
+        android:textColor="@color/widget__quarter_sum"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/guide1"
         app:layout_constraintTop_toBottomOf="@+id/q1icon"
         tools:text="150 AED"
         />
@@ -51,9 +57,181 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="4dp"
-        app:layout_constraintStart_toStartOf="@+id/guideStart"
+        android:textSize="@dimen/widget__quarter_period_text_size"
+        android:textColor="@color/widget__quarter_period"
+        app:layout_constraintStart_toStartOf="@+id/guide1"
         app:layout_constraintTop_toBottomOf="@+id/q1sum"
         tools:text="Today"
+        />
+
+    <!--  Column 2  -->
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guide2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="@fraction/widget__guide2_percent"
+        />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/q2icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:src="@drawable/ic_ellipse_q2"
+        android:tint="@color/widget__quarter_tint"
+        app:layout_constraintStart_toStartOf="@+id/guide2"
+        app:layout_constraintTop_toBottomOf="@+id/widgetTitle"
+        />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/q2sum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:textSize="@dimen/widget__quarter_sum_text_size"
+        android:textColor="@color/widget__quarter_sum"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/guide2"
+        app:layout_constraintTop_toBottomOf="@+id/q2icon"
+        tools:text="150 AED"
+        />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/q2period"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:textSize="@dimen/widget__quarter_period_text_size"
+        android:textColor="@color/widget__quarter_period"
+        app:layout_constraintStart_toStartOf="@+id/guide2"
+        app:layout_constraintTop_toBottomOf="@+id/q2sum"
+        tools:text="In 1 month"
+        />
+
+    <!--  Column 3  -->
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guide3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="@fraction/widget__guide3_percent"
+        />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/q3icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:src="@drawable/ic_ellipse_q3"
+        android:tint="@color/widget__quarter_tint"
+        app:layout_constraintStart_toStartOf="@+id/guide3"
+        app:layout_constraintTop_toBottomOf="@+id/widgetTitle"
+        />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/q3sum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:textSize="@dimen/widget__quarter_sum_text_size"
+        android:textColor="@color/widget__quarter_sum"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/guide3"
+        app:layout_constraintTop_toBottomOf="@+id/q3icon"
+        tools:text="150 AED"
+        />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/q3period"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:textSize="@dimen/widget__quarter_period_text_size"
+        android:textColor="@color/widget__quarter_period"
+        app:layout_constraintStart_toStartOf="@+id/guide3"
+        app:layout_constraintTop_toBottomOf="@+id/q3sum"
+        tools:text="In 2 months"
+        />
+
+    <!--  Column 4  -->
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guide4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="@fraction/widget__guide4_percent"
+        />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/q4icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:src="@drawable/ic_ellipse_q4"
+        android:tint="@color/widget__quarter_tint"
+        app:layout_constraintStart_toStartOf="@+id/guide4"
+        app:layout_constraintTop_toBottomOf="@+id/widgetTitle"
+        />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/q4sum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:textSize="@dimen/widget__quarter_sum_text_size"
+        android:textColor="@color/widget__quarter_sum"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/guide4"
+        app:layout_constraintTop_toBottomOf="@+id/q4icon"
+        tools:text="150 AED"
+        />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/q4period"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:textSize="@dimen/widget__quarter_period_text_size"
+        android:textColor="@color/widget__quarter_period"
+        app:layout_constraintStart_toStartOf="@+id/guide4"
+        app:layout_constraintTop_toBottomOf="@+id/q4sum"
+        tools:text="In 3 months"
+        />
+
+    <!--  Connections  -->
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:background="@color/widget__connection_line"
+        app:layout_constraintLeft_toRightOf="@id/q1icon"
+        app:layout_constraintRight_toLeftOf="@id/q2icon"
+        app:layout_constraintTop_toTopOf="@id/q1icon"
+        app:layout_constraintBottom_toBottomOf="@id/q1icon"
+        />
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:background="@color/widget__connection_line"
+        app:layout_constraintLeft_toRightOf="@id/q2icon"
+        app:layout_constraintRight_toLeftOf="@id/q3icon"
+        app:layout_constraintTop_toTopOf="@id/q2icon"
+        app:layout_constraintBottom_toBottomOf="@id/q2icon"
+        />
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:background="@color/widget__connection_line"
+        app:layout_constraintLeft_toRightOf="@id/q3icon"
+        app:layout_constraintRight_toLeftOf="@id/q4icon"
+        app:layout_constraintTop_toTopOf="@id/q3icon"
+        app:layout_constraintBottom_toBottomOf="@id/q3icon"
         />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
