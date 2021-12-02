@@ -51,7 +51,7 @@
         <entry key="tabby-sdk/src/main/res/drawable/ic_ellipse_q3.xml" value="0.22777777777777777" />
         <entry key="tabby-sdk/src/main/res/drawable/ic_ellipse_q4.xml" value="0.22777777777777777" />
         <entry key="tabby-sdk/src/main/res/drawable/q1.xml" value="0.23703703703703705" />
-        <entry key="tabby-sdk/src/main/res/layout/widget_checkout.xml" value="0.67" />
+        <entry key="tabby-sdk/src/main/res/layout/widget_checkout.xml" value="0.75" />
       </map>
     </option>
   </component>
