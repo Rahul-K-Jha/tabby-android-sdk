@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="widget__title">No fees. Pay with any card.</string>
+    <string name="widget__no_fees">No fees. Pay with any card.</string>
+
+    <string name="widget__q1_period">Today</string>
+    <string name="widget__q2_period">In 1 month</string>
+    <string name="widget__q3_period">In 2 months</string>
+    <string name="widget__q4_period">In 3 months</string>
+
     <string name="widget__currency__aed">AED</string>
     <string name="widget__currency__sar">SAR</string>
     <string name="widget__currency__bhd">BHD</string>

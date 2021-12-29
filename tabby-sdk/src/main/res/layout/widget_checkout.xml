@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
+<merge
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -22,7 +22,7 @@
         android:id="@+id/widgetTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/widget__title"
+        android:text="@string/widget__no_fees"
         android:textSize="@dimen/widget__title_text_size"
         app:layout_constraintStart_toStartOf="@+id/guide1"
         app:layout_constraintTop_toTopOf="parent"
@@ -71,6 +71,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="4dp"
+        android:text="@string/widget__q1_period"
         android:textSize="@dimen/widget__quarter_period_text_size"
         android:textColor="@color/widget__quarter_period"
         app:layout_constraintStart_toStartOf="@+id/guide1"
@@ -131,6 +132,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="4dp"
+        android:text="@string/widget__q2_period"
         android:textSize="@dimen/widget__quarter_period_text_size"
         android:textColor="@color/widget__quarter_period"
         app:layout_constraintStart_toStartOf="@+id/guide2"
@@ -191,6 +193,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="4dp"
+        android:text="@string/widget__q3_period"
         android:textSize="@dimen/widget__quarter_period_text_size"
         android:textColor="@color/widget__quarter_period"
         app:layout_constraintStart_toStartOf="@+id/guide3"
@@ -251,6 +254,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="4dp"
+        android:text="@string/widget__q4_period"
         android:textSize="@dimen/widget__quarter_period_text_size"
         android:textColor="@color/widget__quarter_period"
         app:layout_constraintStart_toStartOf="@+id/guide4"
@@ -290,4 +294,4 @@
         app:layout_constraintBottom_toBottomOf="@id/q3icon"
         />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</merge>

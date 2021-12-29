@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="widget__no_fees">ةقاطب يأ مادختساب عفدا .موسر نودب.</string>
+
+    <string name="widget__q1_period">مويلا</string>
+    <string name="widget__q2_period">رهش دعب</string>
+    <string name="widget__q3_period">نيرهش دعب</string>
+    <string name="widget__q4_period">رهشأ ٣ دعب</string>
+
+    <string name="widget__currency__aed">AED</string>
+    <string name="widget__currency__sar">SAR</string>
+    <string name="widget__currency__bhd">BHD</string>
+    <string name="widget__currency__kwd">KWD</string>
+</resources>
