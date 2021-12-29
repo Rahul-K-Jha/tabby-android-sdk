@@ -40,7 +40,7 @@
         />
 
     <androidx.appcompat.widget.AppCompatTextView
-        android:id="@+id/q1sum"
+        android:id="@+id/q1amount"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
@@ -49,7 +49,21 @@
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="@+id/guide1"
         app:layout_constraintTop_toBottomOf="@+id/q1icon"
-        tools:text="150 AED"
+        tools:text="150"
+        />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/q1currency"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="@dimen/widget__sum_currency_gap"
+        android:textSize="@dimen/widget__quarter_sum_text_size"
+        android:textColor="@color/widget__quarter_sum"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@id/q1amount"
+        app:layout_constraintTop_toBottomOf="@+id/q1icon"
+        tools:text="AED"
         />
 
     <androidx.appcompat.widget.AppCompatTextView
@@ -60,7 +74,7 @@
         android:textSize="@dimen/widget__quarter_period_text_size"
         android:textColor="@color/widget__quarter_period"
         app:layout_constraintStart_toStartOf="@+id/guide1"
-        app:layout_constraintTop_toBottomOf="@+id/q1sum"
+        app:layout_constraintTop_toBottomOf="@+id/q1amount"
         tools:text="Today"
         />
 
@@ -86,7 +100,7 @@
         />
 
     <androidx.appcompat.widget.AppCompatTextView
-        android:id="@+id/q2sum"
+        android:id="@+id/q2amount"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
@@ -95,7 +109,21 @@
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="@+id/guide2"
         app:layout_constraintTop_toBottomOf="@+id/q2icon"
-        tools:text="150 AED"
+        tools:text="150"
+        />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/q2currency"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="@dimen/widget__sum_currency_gap"
+        android:textSize="@dimen/widget__quarter_sum_text_size"
+        android:textColor="@color/widget__quarter_sum"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/q2amount"
+        app:layout_constraintTop_toBottomOf="@+id/q2icon"
+        tools:text="AED"
         />
 
     <androidx.appcompat.widget.AppCompatTextView
@@ -106,7 +134,7 @@
         android:textSize="@dimen/widget__quarter_period_text_size"
         android:textColor="@color/widget__quarter_period"
         app:layout_constraintStart_toStartOf="@+id/guide2"
-        app:layout_constraintTop_toBottomOf="@+id/q2sum"
+        app:layout_constraintTop_toBottomOf="@+id/q2amount"
         tools:text="In 1 month"
         />
 
@@ -132,7 +160,7 @@
         />
 
     <androidx.appcompat.widget.AppCompatTextView
-        android:id="@+id/q3sum"
+        android:id="@+id/q3amount"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
@@ -141,7 +169,21 @@
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="@+id/guide3"
         app:layout_constraintTop_toBottomOf="@+id/q3icon"
-        tools:text="150 AED"
+        tools:text="150"
+        />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/q3currency"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="@dimen/widget__sum_currency_gap"
+        android:textSize="@dimen/widget__quarter_sum_text_size"
+        android:textColor="@color/widget__quarter_sum"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/q3amount"
+        app:layout_constraintTop_toBottomOf="@+id/q3icon"
+        tools:text="AED"
         />
 
     <androidx.appcompat.widget.AppCompatTextView
@@ -152,7 +194,7 @@
         android:textSize="@dimen/widget__quarter_period_text_size"
         android:textColor="@color/widget__quarter_period"
         app:layout_constraintStart_toStartOf="@+id/guide3"
-        app:layout_constraintTop_toBottomOf="@+id/q3sum"
+        app:layout_constraintTop_toBottomOf="@+id/q3amount"
         tools:text="In 2 months"
         />
 
@@ -178,7 +220,7 @@
         />
 
     <androidx.appcompat.widget.AppCompatTextView
-        android:id="@+id/q4sum"
+        android:id="@+id/q4amount"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
@@ -187,7 +229,21 @@
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="@+id/guide4"
         app:layout_constraintTop_toBottomOf="@+id/q4icon"
-        tools:text="150 AED"
+        tools:text="150"
+        />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/q4currency"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="@dimen/widget__sum_currency_gap"
+        android:textSize="@dimen/widget__quarter_sum_text_size"
+        android:textColor="@color/widget__quarter_sum"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/q4amount"
+        app:layout_constraintTop_toBottomOf="@+id/q4icon"
+        tools:text="AED"
         />
 
     <androidx.appcompat.widget.AppCompatTextView
@@ -198,7 +254,7 @@
         android:textSize="@dimen/widget__quarter_period_text_size"
         android:textColor="@color/widget__quarter_period"
         app:layout_constraintStart_toStartOf="@+id/guide4"
-        app:layout_constraintTop_toBottomOf="@+id/q4sum"
+        app:layout_constraintTop_toBottomOf="@+id/q4amount"
         tools:text="In 3 months"
         />
 

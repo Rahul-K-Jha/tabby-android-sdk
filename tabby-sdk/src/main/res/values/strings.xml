@@ -1,4 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="widget__title">No fees. Pay with any card.</string>
+    <string name="widget__currency__aed">AED</string>
+    <string name="widget__currency__sar">SAR</string>
+    <string name="widget__currency__bhd">BHD</string>
+    <string name="widget__currency__kwd">KWD</string>
 </resources>

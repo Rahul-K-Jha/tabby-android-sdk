@@ -41,17 +41,8 @@
         <entry key="../../../../../../layout/compose-model-1637972180712.xml" value="0.1" />
         <entry key="../../../../../../layout/compose-model-1638127423534.xml" value="0.15" />
         <entry key="../../../../../../layout/compose-model-1638127887833.xml" value="0.1" />
-        <entry key="tabby-sdk/src/main/res/drawable/ic_ellipse.xml" value="0.23703703703703705" />
-        <entry key="tabby-sdk/src/main/res/drawable/ic_ellipse_1q.xml" value="0.23703703703703705" />
-        <entry key="tabby-sdk/src/main/res/drawable/ic_ellipse_2q.xml" value="0.23703703703703705" />
-        <entry key="tabby-sdk/src/main/res/drawable/ic_ellipse_4q.xml" value="0.23703703703703705" />
-        <entry key="tabby-sdk/src/main/res/drawable/ic_ellipse_gq1.xml" value="0.23425925925925925" />
-        <entry key="tabby-sdk/src/main/res/drawable/ic_ellipse_q1.xml" value="0.22777777777777777" />
-        <entry key="tabby-sdk/src/main/res/drawable/ic_ellipse_q2.xml" value="0.22777777777777777" />
-        <entry key="tabby-sdk/src/main/res/drawable/ic_ellipse_q3.xml" value="0.22777777777777777" />
-        <entry key="tabby-sdk/src/main/res/drawable/ic_ellipse_q4.xml" value="0.22777777777777777" />
-        <entry key="tabby-sdk/src/main/res/drawable/q1.xml" value="0.23703703703703705" />
-        <entry key="tabby-sdk/src/main/res/layout/widget_checkout.xml" value="0.5" />
+        <entry key="../../../../../../layout/compose-model-1640808572274.xml" value="0.1415133779264214" />
+        <entry key="tabby-sdk/src/main/res/layout/widget_checkout.xml" value="0.33" />
       </map>
     </option>
   </component>
