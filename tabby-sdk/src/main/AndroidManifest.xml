@@ -10,7 +10,13 @@
         >
         <activity
             android:name=".internal.ui.TabbyCheckoutActivity"
-            android:exported="true"
+            android:exported="false"
+            android:theme="@style/Theme.TabbySDK.NoActionBar"
+            >
+        </activity>
+        <activity
+            android:name=".internal.ui.SimpleWebActivity"
+            android:exported="false"
             android:theme="@style/Theme.TabbySDK.NoActionBar"
             >
         </activity>

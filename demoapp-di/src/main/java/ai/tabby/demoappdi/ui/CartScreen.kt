@@ -1,7 +1,8 @@
 package ai.tabby.demoappdi.ui
 
 import ai.tabby.android.data.TabbyPayment
-import ai.tabby.android.ui.TabbyCheckoutWidget
+import ai.tabby.android.ui.TabbyInstallmentsWidget
+import ai.tabby.android.ui.TabbySnippedWidget
 import ai.tabby.demoappdi.R
 import ai.tabby.demoappdi.createSuccessfulPayment
 import ai.tabby.demoappdi.ui.theme.TabbyAppTheme
@@ -31,7 +32,9 @@ fun CartScreen(
                 verticalArrangement = Arrangement.Center,
                 horizontalAlignment = Alignment.CenterHorizontally
             ) {
-                TabbyWidgetComposable(tabbyPayment = tabbyPayment)
+                TabbyInstallmentsWidgetComposable(tabbyPayment = tabbyPayment)
+                Spacer(modifier = Modifier.height(18.dp))
+                TabbySnippetWidgetComposable(tabbyPayment = tabbyPayment)
                 Spacer(modifier = Modifier.height(18.dp))
                 CartWidget(tabbyPayment = tabbyPayment)
                 Spacer(modifier = Modifier.height(18.dp))
@@ -58,10 +61,28 @@ fun CheckoutButton(onClick: () -> Unit) {
 }
 
 @Composable
-fun TabbyWidgetComposable(tabbyPayment: TabbyPayment) {
+fun TabbyInstallmentsWidgetComposable(tabbyPayment: TabbyPayment) {
     AndroidView(
         factory = { context ->
-            TabbyCheckoutWidget(context)
+            TabbyInstallmentsWidget(context)
+        },
+        update = { widget ->
+            val params = ViewGroup.LayoutParams(
+                ViewGroup.LayoutParams.MATCH_PARENT,
+                ViewGroup.LayoutParams.WRAP_CONTENT
+            )
+            widget.layoutParams = params
+            widget.amount = tabbyPayment.amount
+            widget.currency = tabbyPayment.currency
+        }
+    )
+}
+
+@Composable
+fun TabbySnippetWidgetComposable(tabbyPayment: TabbyPayment) {
+    AndroidView(
+        factory = { context ->
+            TabbySnippedWidget(context)
         },
         update = { widget ->
             val params = ViewGroup.LayoutParams(

@@ -10,7 +10,7 @@ import androidx.appcompat.widget.AppCompatTextView
 import java.math.BigDecimal
 import java.util.*
 
-class TabbyCheckoutWidget
+class TabbyInstallmentsWidget
     @JvmOverloads
     constructor(
         ctx: Context,
@@ -22,7 +22,7 @@ class TabbyCheckoutWidget
 
     init {
         val inflater = context.getSystemService(Context.LAYOUT_INFLATER_SERVICE) as LayoutInflater
-        inflater.inflate(R.layout.widget_checkout, this)
+        inflater.inflate(R.layout.installments_widget, this)
     }
 
     var amount: BigDecimal = BigDecimal.ZERO
