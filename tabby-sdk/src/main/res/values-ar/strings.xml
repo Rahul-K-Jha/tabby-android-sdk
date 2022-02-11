@@ -5,6 +5,7 @@
     <string name="installments_widget__q2_period">رهش دعب</string>
     <string name="installments_widget__q3_period">نيرهش دعب</string>
     <string name="installments_widget__q4_period">رهشأ ٣ دعب</string>
+    <string name="installments_widget__amount">%1$s %2$s</string>
 
 <!--    <string name="info_widget__title_orig">سّمها على 4 دفعات شهرية بقيمة %@ %@. بدون رسوم أو فوائد. </string>-->
     <string name="snippet_widget__learn_more">لمعرفة المزيد</string>

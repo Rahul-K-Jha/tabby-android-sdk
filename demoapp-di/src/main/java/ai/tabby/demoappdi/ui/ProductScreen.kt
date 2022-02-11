@@ -1,11 +1,9 @@
 package ai.tabby.demoappdi.ui
 
-import ai.tabby.android.core.Tabby
 import ai.tabby.android.data.*
 import ai.tabby.demoappdi.createSuccessfulPayment
 import ai.tabby.demoappdi.CheckoutViewModel
 import ai.tabby.demoappdi.ui.theme.TabbyAppTheme
-import android.content.Intent
 import android.content.res.Configuration
 import androidx.compose.foundation.layout.*
 import androidx.compose.material.Button

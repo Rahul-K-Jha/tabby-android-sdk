@@ -15,7 +15,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="@string/snippet_widget__title"
-        android:textSize="@dimen/widget__title_text_size"
+        android:textSize="@dimen/snippet_widget__title_text_size"
         android:lineSpacingMultiplier="1.5"
         app:layout_constraintEnd_toStartOf="@+id/widgetLogo"
         app:layout_constraintStart_toStartOf="parent"

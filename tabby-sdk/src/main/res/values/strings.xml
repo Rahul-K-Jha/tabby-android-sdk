@@ -5,7 +5,7 @@
     <string name="installments_widget__q2_period">In 1 month</string>
     <string name="installments_widget__q3_period">In 2 months</string>
     <string name="installments_widget__q4_period">In 3 months</string>
-
+    <string name="installments_widget__amount">%1$s %2$s</string>
 
     <string name="snippet_widget__title">or 4 interest-free payments of %1$s %2$s &lt;font color="#3835AF">&lt;b>Learn\u00A0more&lt;/b>&lt;/font></string>
     <string name="snippet_widget__learn_more">Learn\u00A0more</string>

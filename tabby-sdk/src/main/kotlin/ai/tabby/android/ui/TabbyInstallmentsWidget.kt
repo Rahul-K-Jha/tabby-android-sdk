@@ -28,26 +28,19 @@ class TabbyInstallmentsWidget
     var amount: BigDecimal = BigDecimal.ZERO
         set(value) {
             field = value
-            updateAmount()
+            update()
         }
 
     var currency: Currency = Currency.AED
         set(value) {
             field = value
-            updateCurrency()
+            update()
         }
 
-    private fun updateAmount() {
-        val installment = amount.toDouble() / 4
-        val formatted = String.format(Locale.getDefault(), "%.2f", installment)
-        findViewById<AppCompatTextView>(R.id.q1amount).text = formatted
-        findViewById<AppCompatTextView>(R.id.q2amount).text = formatted
-        findViewById<AppCompatTextView>(R.id.q3amount).text = formatted
-        findViewById<AppCompatTextView>(R.id.q4amount).text = formatted
-        requestLayout()
-    }
+    private fun update() {
+        val payment = amount.toDouble() / 4
+        val formattedPayment = String.format(Locale.getDefault(), "%.2f", payment)
 
-    private fun updateCurrency() {
         val currencyStrId = when (currency) {
             Currency.AED -> R.string.widget__currency__aed
             Currency.SAR -> R.string.widget__currency__sar
@@ -55,10 +48,12 @@ class TabbyInstallmentsWidget
             Currency.KWD -> R.string.widget__currency__kwd
         }
         val currencyStr = context.getString(currencyStrId)
-        findViewById<AppCompatTextView>(R.id.q1currency).text = currencyStr
-        findViewById<AppCompatTextView>(R.id.q2currency).text = currencyStr
-        findViewById<AppCompatTextView>(R.id.q3currency).text = currencyStr
-        findViewById<AppCompatTextView>(R.id.q4currency).text = currencyStr
+
+        val fullStr = resources.getString(R.string.installments_widget__amount, formattedPayment, currencyStr)
+        findViewById<AppCompatTextView>(R.id.q1amount).text = fullStr
+        findViewById<AppCompatTextView>(R.id.q2amount).text = fullStr
+        findViewById<AppCompatTextView>(R.id.q3amount).text = fullStr
+        findViewById<AppCompatTextView>(R.id.q4amount).text = fullStr
         requestLayout()
     }
 }
